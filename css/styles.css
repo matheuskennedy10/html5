@@ -1,0 +1,11 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    }
+
+    .pai .um~.dois {
+        color:red;
+    }
+    [meu-atributovalor=""]{
+        color: red;
+    }

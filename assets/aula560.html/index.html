@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+           font-family: sans-serif;
+       } 
+       table {
+           border-collapse: collapse;
+           width: 100%;
+       }
+      table td, table th{
+        border: 1px solid  #ccc;
+        padding: 5px;
+        text-align: left;
+
+      }  
+      table caption {
+          caption-side: bottom;
+          text-align: center;
+          font-style:italic;
+          font-size: 14px;
+          margin-bottom: 5px;
+      }
+     tfoot td, table th {
+         background-color: aliceblue;
+     }
+     tfoot td {
+         font-style: italic;
+     }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem modi accusantium, impedit iusto aliquam ipsum minus dolore error, laboriosam at distinctio unde illum nisi aliquid vero commodi perspiciatis laborum nulla.</p>
+    <table>
+        <capition>uma descricao para tabela</capition>
+        <thead>
+            <tr>
+                <th>titulo 1</th>
+                <th>titulo 2</th>
+                <th>titulo 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>corpo 1</td>
+                <td>corpo 2</td>
+                <td>corpo 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>corpo 1</td>
+                <td>corpo 2</td>
+                <td>corpo 3</td>
+            </tr>
+            <tr>
+                <td>corpo 1</td>
+                <td calspan="2" rowspan="2">
+                </td>
+                <td rowspan="">total: <br>
+                r$555</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
