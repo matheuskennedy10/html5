@@ -11,7 +11,7 @@
        } 
        table {
            border-collapse: collapse;
-           width: 100%;
+           width: 800px;
        }
       table td, table th{
         border: 1px solid  #ccc;
@@ -32,10 +32,16 @@
      tfoot td {
          font-style: italic;
      }
+
+     .responsive-table{
+         max-width: 100%;
+         overflow-x: auto;
+     }
     </style>
 </head>
 <body>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem modi accusantium, impedit iusto aliquam ipsum minus dolore error, laboriosam at distinctio unde illum nisi aliquid vero commodi perspiciatis laborum nulla.</p>
+    <div class="responsive-table"> 
     <table>
         <capition>uma descricao para tabela</capition>
         <thead>
@@ -67,5 +73,6 @@
             </tr>
         </tfoot>
     </table>
+</div>
 </body>
 </html>
