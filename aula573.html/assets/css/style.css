@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+}
+
+ul {
+  height: 300px;
+  overflow: auto;
+}
+
+ul li.sticky {
+ position: sticky;
+ background: gray;
+ top: 0;
+}
