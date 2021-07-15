@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-conteiner {
+  display: flex;
+  justify-content: flex-start;  /* eixo vertical*/
+  flex-wrap: wrap;
+  align-items: flex-start;  /*eixo horiontal*/
+  background: yellow;  
+  height: 640px;
+}
+
+.flex-item {
+  width: 100%;
+  color: aliceblue;
+background: red;
+}
+
+.flex-item:nth-child(1) {
+   order: 2;
+}
+ 
