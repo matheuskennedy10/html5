@@ -1,59 +1,28 @@
- :root {
-   --primary-color: #0a1128;
-   --white-color: #ffffff;
- }
-
-* {
-  margin: 0;
-  padding: 0;
+.intro-content {
+  position: relative;
+  top: 8rem;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--gap);
+  height: 100vh;
 }
 
-html {
-  font-size: 62.5%;
+.intro-text-content, .intro-img {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
-body {
-  font-family: 'open sans', sans-serif;
-  font-size: 2rem;
-  color: var(--primary-color)
+.intro-img img, .intro-img svg {
+  max-width: 100%;
+  height: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'montserrat', sans-serif;
-}
-
-h1 {
-  font-size:6rem;
-  text-transform: uppercase;
-}
-h2 {
-  font-size: 5.5rem;
-}h3 {
-  font-size: 5rem;
-}h4 {
-  font-size: 4.5rem;
-}h5 {
-  font-size: 4rem;
-}h6 {
-  font-size: 3.5rem;
-}
-
-.main-bg {
-  background-image: url('../img/main-bg.svg.svg');
-  background-size: cover;
-  background-position: center center;
-  color: var(--white-color) ;
-}
-
-.white-bg {
-  background: var(--white-color);
-}
-
-.main-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.section {
-  min-height: 100vh;
+.top3-content {
+  max-width: 64rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
 }
