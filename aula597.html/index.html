@@ -16,20 +16,24 @@
   <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
   <link href = "https: //fonts.googleapis.com/css2? family = Montserrat & family = Abrir + Sans: ital, wght @ 0,400; 0,700; 1,400 & display = swap "rel =" stylesheet ">
 </head>
-<body class="main-bg">
-     <aside class="menu white-bg">
+<body>
+
+     <input id="close-menu" class="close-menu" type="checkbox" arial-label="close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+     <aside  class="menu white-bg">
        <div class="main-content    menu-content">
-       <h1>
+       <h1 onclick="getElementById('close-menu').checked = false;">
          <a href="#home">logo</a>
        </h1>
 
        <nav>
-         <ul>
+         <ul onclick="getElementById('close-menu').checked = false;">
            <li><a href="#intro">intro</a></li>
            <li><a href="#grid-one">grid-one</a></li>
           <li><a href="#gallery">gallery</a></li>
           <li><a href="#grid-two">grid-two</a></li>
-          <li><a href="#">contact</a></li>
+          <li><a href="#princing">princing</a></li>
+          <li><a href="#contact">contact</a></li>
          </ul>
        </nav>
       </div>
@@ -133,14 +137,123 @@
 </div>
 </section>
 
+<div class="responsive">
 <section  id="princing" class="white-bg section">
   <div class="main-content top 3 content">
     <h2>princing</h2>
     <p>Below you can see the top 30 jobs in demand now in Minnesota that don’t require a college degree. Each of the jobs on the list requires a year or less of post-secondary training, a high school diploma, or less. Jobs are listed in order of demand with jobs in highest demand at the top of the list below. Each job listing incl</p>
     <p>Assist in providing client services in a wide variety of fields, such as psychology, rehabilitation, or social work, including support for families. May assist clients in identifying and obtaining available benefits and social and community services. May assist social workers with developing, organizing, and conducting programs to prevent and resolve problems relevant to substance abuse, human relationships, rehabilitation, or dependent care</p>
 
+    <div class="responsive-table">
+    <table>
+      <caption>princing table</caption>
+
+      <thead>
+        <tr>
+        <th>title 1</th>
+        <th>title 2</th>
+        <th>title 3</th>
+        <th>title 4</th>
+        <th>title 5</th>
+        <th>title 6</th>
+      </tr>
+      </thead>
+   
+      <tbody>
+        <tr>
+          <td>content 1</td>
+          <td>content 2</td>
+          <td>content 3</td>
+          <td>content 3</td>
+          <td>content 3</td>
+          <td>content 3</td>
+        </tr>
+        <tr>
+          <td>content 1</td>
+          <td>content 2</td>
+          <td>content 3</td>
+          <td>content 3</td>
+          <td>content 3</td>
+          <td>content 3</td>
+        </tr>
+        <tr>
+          <td>content 1</td>
+          <td>content 2</td>
+          <td>content 3</td>
+          <td>content 3</td>
+          <td>content 3</td>
+          <td>content 3</td>
+        </tr>
+      </tbody>
+
+     <tfoot>
+       <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td></td>
+         <td>testando</td>
+
+       </tr>
+     </tfoot>
+    </table>
+  </div>
   </div>
 </section>
 
+<div class="menu-spacing"></div>
+
+<section id="contact" class="main-bg section">
+  <div class="main-content intro-content">
+      <div class="intro-text-content">
+      <h2>Resumo da História do Futebol </h2>
+      <p>O futebol é o esporte mais popular do mundo e foi criado na Inglaterra, no século XVII. As primeiras regras escritas do futebol surgiram em 1830 e foram sendo modificadas posteriormente. O esporte chegou ao Brasil em 1894, trazido por Charles Miller, um jovem filho de ingleses que chegou a São Paulo após realizar seus estudos na Europas.</p>
+     </div>
+     <div class="intro-img">
+       <img src="assets/img/javascript-not-optimizet-svg.svg" alt="logo de html, css e js.">
+     </div>
+     <div class="intro-img">
+      <img src="assets/img/javascript-not-optimizet-svg.svg" alt="logo de html, css e js.">
+    </div>
+    <div class="contact-form">
+    <fieldset>
+      <legend>contact me</legend>
+
+      <div class="form-group">
+        <label for="first-name">first-name</label>
+      <input type="text" name="first-name" id="first-name" placeholder="your name">
+    </div>
+    <div class="form-group">
+      <label for="last-name">last-name</label>
+    <input type="text" name="last-name" id="last-name"  placeholder="last name">
+  </div>
+</div>
+<div class="form-group">
+  <label for="email">email</label>
+<input type="text" name="email" id="email"  placeholder="your email">
+</div>
+<div class="form-group full-width">
+  <label for="message">message</label>
+<textarea name="message" id="message" cols="30" rows="10"></textarea>
+</div>
+</div>
+<div class="form-group full-width">
+<button type="submit">send-message</button>
+    </fieldset>
+
+    </div>
+   </div>
+</section>
+
+<footer id="footer" class="footer white-bg">
+  <p>
+    <a href="">
+      feito com ♥ por matheus kennedy
+    </a>
+  </p>
+</footer>
+
+<a class="back-to-top" href="#">➤</a>
 </body>
 </html>
